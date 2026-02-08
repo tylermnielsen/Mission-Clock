@@ -47,11 +47,23 @@ function updateClock() {
   let seconds = Math.floor(diff_ms / SECOND_IN_MS); 
   diff_ms %= SECOND_IN_MS; 
 
-  week_element.textContent = weeks;
-  day_element.textContent = days; 
-  time_elements[0].textContent = String(hours).padStart(2, '0'); 
-  time_elements[1].textContent = String(minutes).padStart(2, '0'); 
-  time_elements[2].textContent = String(seconds).padStart(2, '0');  
+  if(weeks != week_element.textContent){
+    week_element.textContent = weeks;
+  }
+  if(days != day_element.textContent){
+    day_element.textContent = days; 
+  }
+  if(time_elements[0].textContent != String(hours).padStart(2, '0')){
+    time_elements[0].textContent = String(hours).padStart(2, '0'); 
+  }
+
+  if(time_elements[1].textContent != String(minutes).padStart(2, '0')) {
+    time_elements[1].textContent = String(minutes).padStart(2, '0'); 
+  }
+  
+  if(time_elements[2].textContent != String(seconds).padStart(2, '0')) {
+    time_elements[2].textContent = String(seconds).padStart(2, '0');  
+  }
 }
 
 const interval = setInterval(updateClock, 1000); 
