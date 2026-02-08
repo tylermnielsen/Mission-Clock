@@ -29,9 +29,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-/* 
-  width: 90%; 
-  height: 70%; */
 
   display: grid; 
   grid-template-columns: 50% 50%;
@@ -44,12 +41,12 @@ body {
 }
 
 #weeks .text, #days .text {
-  font-size: 10vw; 
+  font-size: min(12vw, 15vh); 
   line-height: 0.85;
 }
 
 #weeks .label, #days .label {
-  font-size: 4vw; 
+  font-size: min(5vw, 10vh); 
 }
 
 #time {
@@ -65,28 +62,25 @@ body {
 
 #time .text, #time .punc {
   text-align: center;
-  font-size: 17vw; 
+  /* font-size: 20vmin;  */
+  font-size: min(17vw, 40vh);
   line-height: 0.85;
 }
 
 #time .label {
   line-height: 0.85;
+  text-align: center;
+  font-size: min(5vw, 10vh);
 }
 
 #time #hour {
   grid-column: 2 / span 1; 
-  text-align: center;
-  font-size: 5vw; 
 }
 
 #time #minute {
   grid-column: 4 / span 1;
-  text-align: center;
-  font-size: 5vw; 
 }
 
 #time #second {
   grid-column: 6 / span 1;
-  text-align: center;
-  font-size: 5vw; 
 }
