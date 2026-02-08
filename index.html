@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Mission Clock</title>
+    <link rel="stylesheet" href="styles/default.css" />
+  </head>
+
+  <body onload="setup()">
+    <button id="settings_button" onclick="updateTarget()">
+      <img width="16" alt="Icon from Wikimedia Codex library" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Codex_icon_settings_color-notice.svg/16px-Codex_icon_settings_color-notice.svg.png?20250822131232">
+    </button>
+
+    <div id="container">
+
+    <div id="weeks">
+      <div class="text">00</div>
+      <div class="label">WEEK</div>
+    </div>
+    <div id="days">
+      <div class="text">00</div>
+      <div class="label">DAY</div>
+    </div>
+    <div id="time">
+      <div class="punc">-</div>
+      <div class="text">00</div>
+      <div class="punc">:</div>
+      <div class="text">00</div>
+      <div class="punc">:</div>
+      <div class="text">00</div>
+
+      <div class="label" id="hour">HOUR</div>
+      <div class="label" id="minute">MINUTE</div>
+      <div class="label" id="second">SECOND</div>
+    </div>
+
+    </div>
+
+    <script src="scripts/main.js"></script>
+  </body>
+
+</html>

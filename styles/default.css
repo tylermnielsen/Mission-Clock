@@ -1,0 +1,92 @@
+
+/* * {
+  border: 3px solid black;
+} */
+
+
+body {
+  font-family: "Courier New", monospace;
+  font-style: bold;
+  margin: 0;
+  padding: 0;
+}
+
+#settings_button {
+  background-color: inherit;
+  border: none; 
+  padding: 1%;
+  width: 1%; 
+  height: auto; 
+}
+
+#settings_button:hover {
+  opacity: 60%;
+}
+
+#container {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+/* 
+  width: 90%; 
+  height: 70%; */
+
+  display: grid; 
+  grid-template-columns: 50% 50%;
+  column-gap: 0;
+  row-gap: 0;
+}
+
+#weeks, #days {
+  text-align: center;
+}
+
+#weeks .text, #days .text {
+  font-size: 10vw; 
+  line-height: 0.85;
+}
+
+#weeks .label, #days .label {
+  font-size: 4vw; 
+}
+
+#time {
+  grid-column: 1 / span 2; 
+  text-align: center;
+
+  display: grid; 
+  grid-template-columns: repeat(6, 1fr);
+  padding: 0; 
+  margin: 0;
+
+}
+
+#time .text, #time .punc {
+  text-align: center;
+  font-size: 17vw; 
+  line-height: 0.85;
+}
+
+#time .label {
+  line-height: 0.85;
+}
+
+#time #hour {
+  grid-column: 2 / span 1; 
+  text-align: center;
+  font-size: 5vw; 
+}
+
+#time #minute {
+  grid-column: 4 / span 1;
+  text-align: center;
+  font-size: 5vw; 
+}
+
+#time #second {
+  grid-column: 6 / span 1;
+  text-align: center;
+  font-size: 5vw; 
+}
