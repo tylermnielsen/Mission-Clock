@@ -18,11 +18,12 @@ body {
 
 #settings_button img {
   height: auto; 
-  width: min(5vw, 10vh);
+  width: min(5vw, 5vh);
+  opacity: 0.6;
 }
 
-#settings_button:hover {
-  opacity: 60%;
+#settings_button:hover img {
+  opacity: 1;
 }
 
 #container {
