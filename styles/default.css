@@ -14,8 +14,11 @@ body {
   background-color: inherit;
   border: none; 
   padding: 1%;
-  width: 1%; 
+}
+
+#settings_button img {
   height: auto; 
+  width: 2em;
 }
 
 #settings_button:hover {
