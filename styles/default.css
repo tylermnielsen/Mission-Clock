@@ -15,7 +15,7 @@ header {
   display: flex;
 }
 
-#title {
+#title_button {
   margin: 0;
   padding: 0;
   background-color: inherit;
@@ -27,7 +27,7 @@ header {
   font-weight: bold;
 }
 
-#title:hover {
+#title_button:hover {
   opacity: .6;
 }
 

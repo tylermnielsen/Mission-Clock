@@ -85,7 +85,7 @@ function updateTarget() {
 
 }
 
-const title = document.getElementById("title");
+const title = document.getElementById("title_button");
 function updateTitle() {
   let new_title = prompt("Enter new title");
   if (new_title == null) return;
