@@ -7,6 +7,7 @@ body {
   font-family: "Courier New", monospace;
   margin: 0;
   padding: 0;
+  color: black;
 }
 
 header {
@@ -25,6 +26,7 @@ header {
 
   font-size: min(6vw, 10vh);
   font-weight: bold;
+  color: black;
 }
 
 #title_button:hover {
