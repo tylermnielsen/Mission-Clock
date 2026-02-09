@@ -2,19 +2,21 @@
 
 <html>
 
-  <head>
-    <meta charset="utf-8" />
-    <title>Mission Clock</title>
-    <link rel="stylesheet" href="styles/default.css" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <title>Mission Clock</title>
+  <link rel="stylesheet" href="styles/default.css" />
+</head>
 
-  <body onload="setup()">
+<body onload="setup()">
+  <header>
     <button id="settings_button" onclick="updateTarget()">
-      <!--https://commons.wikimedia.org/wiki/File:Codex_icon_settings_color-notice.svg-->
-      <img src="images/Codex_icon_settings_color-notice.svg" alt="Settings" />
+      <!--https://commons.wikimedia.org/wiki/File:Tabler-icons_clock-cog.svg-->
+      <img src="images/Tabler-icons_clock-cog.svg" alt="Settings" />
     </button>
-
-    <div id="container">
+    <button id="title" onclick="updateTitle()">Title</button>
+  </header>
+  <div id="container">
 
     <div id="weeks">
       <div class="text">00</div>
@@ -37,9 +39,9 @@
       <div class="label" id="second">SECOND</div>
     </div>
 
-    </div>
+  </div>
 
-    <script src="scripts/main.js"></script>
-  </body>
+  <script src="scripts/main.js"></script>
+</body>
 
 </html>
